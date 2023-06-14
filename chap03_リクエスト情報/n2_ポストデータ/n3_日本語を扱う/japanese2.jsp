@@ -8,6 +8,7 @@
 <body>
   <%
     // テキストボックスの値から挨拶メッセージを生成／出力
+    request.setCharacterEncoding("UTF-8");
     out.println("こんにちは、"+request.getParameter("nam")+"さん！");
   %>
 </body>
