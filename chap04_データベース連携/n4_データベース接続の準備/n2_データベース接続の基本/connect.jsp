@@ -9,8 +9,9 @@
   <%
     Context context = new InitialContext();
     DataSource ds = (DataSource)context.lookup("java:comp/env/jdbc/selfjsp");
-    Connection db = ds.getConnection();
-    db.close();
+    try(Connection db = ds.getConnection()) {
+      // データベースの操作
+    }
   %>
   データベースへの接続に成功しました。
 </body>
