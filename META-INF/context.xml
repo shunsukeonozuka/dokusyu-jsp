@@ -2,7 +2,7 @@
 <Context reloadable="true">
   <Resource name="jdbc/selfjsp" auth="Container" type="javax.sql.DataSource"
     driverClassName="com.mysql.cj.jdbc.Driver"
-    url="jdbc:mysql://localhost/selfjsp?serverTimezone=JST"
+    url="jdbc:mysql://localhost/selfjsp"
     username="jspusr" password="jsppass" maxTotal="4"
     maxWaitMillis="5000" maxIdle="2"
     validationQuery="SELECT count(*) FROM book">
