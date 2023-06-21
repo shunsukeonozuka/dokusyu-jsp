@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context reloadable="true">
+  <Resource name="jdbc/selfjsp" auth="Container" type="javax.sql.DataSource"
+    driverClassName="com.mysql.cj.jdbc.Driver"
+    url="jdbc:mysql://localhost/selfjsp?serverTimezone=JST"
+    username="jspusr" password="jsppass" maxTotal="4"
+    maxWaitMillis="5000" maxIdle="2"
+    validationQuery="SELECT count(*) FROM book">
+  </Resource>
 </Context>
